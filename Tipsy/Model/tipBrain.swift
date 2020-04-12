@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct tipBrain {
+    // takes in Float tip (e.g. 0.15), Float bill, and Int numPeople, returns a String with the split rounded dollar amount
+    func calculate(tip: Float, numPeople : Int, bill : Float) -> String {
+        let split = (bill * (1 + tip) / Float(numPeople))
+        return String(format: ".2f%", split)
+    }
+}
