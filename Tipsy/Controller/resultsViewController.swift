@@ -10,6 +10,8 @@ import UIKit
 
 class ResultsViewController: UIViewController {
     
+    var tip: tipInfo?
+    
     @IBOutlet weak var total: UILabel!
     @IBOutlet weak var information: UILabel!
 

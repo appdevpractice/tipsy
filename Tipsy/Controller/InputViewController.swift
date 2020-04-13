@@ -13,6 +13,8 @@ class InputViewController: UIViewController {
     //the currently selected tip
     var tipAmount = 10
     
+    var tip: tipInfo?
+    
     @IBOutlet weak var billTotal: UITextField!
     
     @IBOutlet weak var splitNum: UILabel!
@@ -28,8 +30,14 @@ class InputViewController: UIViewController {
     }
     
     @IBAction func calculateTip(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToSegue", sender: self)
     }
     
-    //need a prepare function that gives something of type tipInfo to ResultsViewController...
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToSegue" {
+            let dest = segue.destination as! ResultsViewController
+            dest.tip = tip
+        }
+    }
 }
 
