@@ -263,7 +263,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10f"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="recalculate:" destination="Dnf-m2-FPm" eventType="touchUpInside" id="H6r-M4-av0"/>
+                                    <action selector="recalculate:" destination="Dnf-m2-FPm" eventType="touchUpInside" id="uje-Mw-0DM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split between 2 people, with 10% tip." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGt-bn-sCv">
@@ -290,8 +290,10 @@
                         <viewLayoutGuide key="safeArea" id="Jmu-aI-Opa"/>
                     </view>
                     <connections>
+                        <outlet property="information" destination="HGt-bn-sCv" id="Ty6-Pg-7x4"/>
                         <outlet property="tipInfo" destination="HGt-bn-sCv" id="rsm-R9-Dv2"/>
                         <outlet property="tipTotal" destination="uLJ-ii-hft" id="kNU-PX-7Iy"/>
+                        <outlet property="total" destination="uLJ-ii-hft" id="IES-pl-cs0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLi-Eb-NGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

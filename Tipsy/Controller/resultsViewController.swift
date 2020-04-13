@@ -8,6 +8,12 @@
 
 import UIKit
 
-class resultsViewController: UIViewController {
+class ResultsViewController: UIViewController {
+    
+    @IBOutlet weak var total: UILabel!
+    @IBOutlet weak var information: UILabel!
+
+    @IBAction func recalculate(_ sender: UIButton) {
+    }
     
 }
