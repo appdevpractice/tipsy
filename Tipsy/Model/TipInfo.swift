@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct tipInfo {
+struct TipInfo {
     var tip: Float?
     var numPeople: Int?
     var bill: Float?

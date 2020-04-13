@@ -16,6 +16,6 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var information: UILabel!
 
     @IBAction func recalculate(_ sender: UIButton) {
-    }
     
+    }
 }
