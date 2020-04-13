@@ -13,7 +13,7 @@ class InputViewController: UIViewController {
     //the currently selected tip
     var tipAmount = 10
     
-    var tip: tipInfo?
+    var tip: TipInfo?
     
     @IBOutlet weak var billTotal: UITextField!
     
